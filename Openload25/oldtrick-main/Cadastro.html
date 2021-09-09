@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./cadastro/css/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="placa-container">
+
+            <img src="./cadastro/img/placaalt3.png" alt="">
+
+            <div class="input-container">
+                <h2 class="tst">CADASTRO</h2>
+                <input type="text" placeholder="E-mail" id="email">
+                <input type="text" placeholder="Login" id="login">
+                <input type="password" placeholder="Crie a sua senha" id="password1">
+
+                <div class="pass2">
+                    <input type="password" placeholder="Confirme a senha" id="password">
+                    <i class="fas fa-eye" id="olho" onclick="myFunction()"></i>
+                </div>
+                
+                <button onclick="cadastrarDados()">Cadastrar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById("password")
+            if (x.type === "password") {
+                document.getElementById("olho").style.color='#5887ef';
+                x.type = "text";
+            }   else{
+                document.getElementById("olho").style.color='#272020';
+                x.type = "password"
+            }    
+            var y = document.getElementById("password1")
+            if (y.type === "password") {
+                y.type = "text";
+            }   else{
+                y.type = "password"
+            }  
+        }
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/6f548f0dfc.js" crossorigin="anonymous"></script>
+    
+    <script src="./js/local.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://use.fontawesome.com/11562388aa.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/Shapes-solitarios.css">
+    <title>SHAPE BAKER LOGO 8</title>
+</head>
+
+<body>
+
+
+    <!--MENU DE NAVEGAÇÃO-->
+    <header>
+        <div class="dados">
+            <div class="pedidos">
+                <p>RASTREAR PEDIDO</p>
+                <p>MEUS PEDIDOS</p>
+            </div>
+
+            <div class="Ajuda">
+                <p>AJUDA</p>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="header2">
+        <div>
+            <img id="simbolo" src="./img/Logo.png">
+            <img id="nome" src="./img/nome.png">
+        </div>
+
+        <div class="divBusca">
+            <input type="text" class="caixa-de-texto-busca" placeholder="procurar...">
+            <button id="btn-buscar" onclick="myFunction()"><img src="./img/lupa.png"></button>
+        </div>
+
+        <div class="div-header2">
+            <div class="conta">
+                <img src="./img/perfil-de-usuario.png">
+                <a href="./Login.html"><button id="btn-conta"><b>Conta</b></button></a>
+            </div>
+
+            <div class="carrinho">
+                <img src="./img/carrinho-de-compras-de-design-xadrez.png">
+                <a href="./Carrinho.html"><button id="btn-carrinho"><b>Carrinho</b></button></a>
+            </div>
+        </div>
+    </div>
+
+    <!--Dropdown-->
+    <nav>
+        <div class="navbar">
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name">The OldTrick</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li>
+                        <a href="#">BRANDS</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                        <ul class="htmlCss-sub-menu sub-menu">
+                            <li><a href="./BRANDS-Hondar.html">HONDAR</a></li>
+                            <li><a href="./BRANDS-Element.html">ELEMENT</a></li>
+                            <li><a href="./BRANDS-BAKER.html">BAKER</a></li>
+                            <li><a href="./BRANDS-Santa-Cruz.html">SANTA CRUZ</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">CONFECÇÕES</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="#"></a></li>
+                            <li><a href="./CONFECCOES-moletons.html">MOLETONS</a></li>
+                            <li><a href="./CONFECCOES-camisetas.html">CAMISETAS</a></li>
+                            <li><a href="./Confeccoes-Tenis.html">TÊNIS</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">SKATE</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="./Skate-Shapes.html">SHAPES</a></li>
+                            <li><a href="./Skate-Rodinhas.html">RODINHAS</a></li>
+                            <li><a href="./Skate-Rolamento.html">ROLAMENTO</a></li>
+                            <li><a href="./Skate-Lixas.html">LIXAS</a></li>
+                            <li><a href="./Skate-Kit-Reparo.html">KIT-REPARO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./Sobre.html">SOBRE</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Produto-->
+    <div class="pag-product">
+        <div class="card-image">
+
+            <div class="main-img">
+                <label id="FotoP"></label>
+                <img src="./produtos img/Shapes/BAKER/SHAPE BAKER LOGO 8.png" id="img-principal">
+            </div>
+
+            <div class="informacoes">
+                <div class="descricao">
+                    <h3 id="NomeP">SHAPE BAKER LOGO 8</h3>
+                    <h2 id="PrecoP">R$289,90</h2>
+                    <h5>5x de R$ 58,00 sem juros no cartão</h5>
+                    <div class="cartoes">
+                        <img src="./Card img/visa.png" id="visa">
+                        <img src="./Card img/bradesco.png" id="bradesco">
+                        <img src="./Card img/master card.png" id="master-card">
+                    </div>
+
+                    <label id="quantidade" for="tamanho">Quantidade</label>
+                    <select id="quantidade-de-produto">
+                        <option value="australia">1</option>
+                        <option value="canada">2</option>
+                        <option value="usa">3</option>
+                        <option value="usa">4</option>
+                        <option value="usa">5</option>
+                    </select>
+
+                    <div class="div-carrinho-produto">
+                        <img id="icone-carrinho-button" src="./img/carrinho de compras.png" alt="">
+                        <button id="btn-carrinho-produto" onclick="adicionarAoCarrinho(1)">Adicionar ao
+                            carrinho</button>
+                    </div>
+                    <a class="btn-vender"><button class="btn-comprar" type="submit">Comprar</button></a>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="description">
+            <h3>Descrição do produto</h3>
+        </div>
+        <hr size="1" width="80%">
+
+        <div class="sobre-o-produto">
+            <div class="marca">
+                <h4>Marca:</h4>
+                <img src="./img/2.png">
+            </div>
+            <h4>Baker é uma das marcas mais respeitadas e estilosas do skate. Os shapes Baker são reconhecidos como um
+                dos melhores para uso em qualquer modalidade do skate. Além disso a marca conta com um time pesado de
+                skatistas que mantém a alma skateboard acima de tudo.</h4>
+            <br>
+            <h4>Shape Importado ( Made in MÉXICO); modelo: Brand Logo Red; largura: 8,25 Polegadas (20,95 cm);
+                comprimento: 32,25 polegadas (81,9 cm); Wheel Base: 14,25 polegadas (36,2 cm); peso Aproximado: 1.200 g;
+                100% Maple Norte Americano</h4>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="logo-details">
+                    <i class='bx bxl-slack'></i>
+                    <span class="logo_name">The OldStrick</span>
+                </div>
+                <div class="media-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bx-voicemail'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="link-boxes">
+                <ul class="box">
+                    <li class="link_name">Companhia</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Rastrear Pedido</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Vendas</li>
+                    <li><a href="#">Skates</a></li>
+                    <li><a href="#">Tênis</a></li>
+                    <li><a href="#">Moletons/Camisetas</a></li>
+                </ul>
+                <ul class="box">
+                    <li class="link_name">Perfil</li>
+                    <li><a href="#">Minha conta</a></li>
+                    <li><a href="#">Preferencias</a></li>
+                </ul>
+                <ul class="box input-box">
+                    <li class="link_name">NewsLetter</li>
+                    <li><input type="text" placeholder="Seu Email"></li>
+                    <li><input type="button" value="Inscreva-se"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-details">
+            <div class="bottom_text">
+                <span class="copyright_text"> The OldTrick &#169; 2021</span>
+                <span class="policy_terms">
+                    <a href="">Termos de Privacidade</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/produto.js"></script>
+    <script src="./js/carrinho.js"></script>
+    <script src="./js/produtos.js/PaginaProduto.js"></script>
+</body>
+
+</html>

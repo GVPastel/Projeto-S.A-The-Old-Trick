@@ -1,0 +1,143 @@
+.aoba{
+    display: flex;
+}
+.Lista{
+    color: yellow;
+}
+
+.main_produtos {
+    min-height: 500px;
+    width: 80%;
+    margin-top: 20px;
+    margin: 5px;
+    margin-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.row{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    margin: 10px ;
+}
+.element-img {
+    border-right: 1px solid white;
+    margin-right: 10px;
+    background-color: white;
+}
+.element-nome {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.element-quantidade {
+    width: 50%;
+    height: 35px;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    cursor: pointer;
+}
+    
+#opcoes option {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.element-preco {
+    font-size: 30px;
+}
+
+.pagamento{
+    width: 40%;
+    height: 300px;
+    border-left: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin: 5px;
+}
+
+.pagamento input {
+    width: 25%;
+    height: 7%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 1%;
+}
+
+.pagamento h2 {
+    margin-bottom: 1%;
+}
+
+.pagamento p {
+    font-size: 21px;
+}
+
+.pagamento a {
+    font-size: 20px;
+}
+
+.pagamento label {
+    font-size: 20px;
+}
+
+.pagamento button {
+    width: 200px;
+    height: 40px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color:#7e0c19;
+    color: white;
+    cursor: pointer;
+}
+.pagamento button:hover {
+     background-color:#961322;
+}
+.Forma-de-pagamento-carrinho {
+    width: 100%;
+    display: flex;
+   justify-content: center;
+}
+.Forma-de-pagamento-carrinho a {
+    margin-left: 1%;
+    margin-right: 1%;
+    color: yellow;
+}
+
+.cartao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartao img {
+    width: 50%;
+    height: 10%;
+}
+
+.desconto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

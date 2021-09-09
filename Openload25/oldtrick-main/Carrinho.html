@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://use.fontawesome.com/11562388aa.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/produto.css">
+  <link rel="stylesheet" href="./css/carrinho.css">
+  <title>Carrinho de compras</title>
+</head>
+
+<body onload="CarrinhoFinal() , ValorTotal()">
+
+  <!--MENU DE NAVEGAÇÃO-->
+  <header>
+    <div class="dados">
+      <div class="pedidos">
+        <p>RASTREAR PEDIDO</p>
+        <p>MEUS PEDIDOS</p>
+      </div>
+
+      <div class="Ajuda">
+        <p>AJUDA</p>
+      </div>
+
+    </div>
+
+    <!-- <div class="div-banner">
+            <img src="./img/banner2.jpg" alt="img-logo">
+        </div> -->
+  </header>
+
+  <div class="header2">
+    <div>
+      <img id="simbolo" src="./img/Logo.png">
+      <img id="nome" src="./img/nome.png">
+    </div>
+
+    <div class="divBusca">
+      <input type="text" class="caixa-de-texto-busca" placeholder="procurar...">
+      <button id="btn-buscar" onclick="myFunction()"><img src="./img/lupa.png"></button>
+    </div>
+
+    <div class="div-header2">
+      <div class="conta">
+        <img src="./img/perfil-de-usuario.png">
+        <a href="./Login.html"><button id="btn-conta"><b>Conta</b></button></a>
+      </div>
+
+      <div class="carrinho">
+        <img src="./img/carrinho-de-compras-de-design-xadrez.png">
+        <a href="./Carrinho.html"><button id="btn-carrinho"><b>Carrinho</b></button></a>
+      </div>
+    </div>
+  </div>
+  
+  <!--Meio-->
+  <div id="baixo">
+
+  </div>
+  <div id="maisbaixo">
+
+  </div>
+  <!--Dropdown-->
+  <nav>
+    <div class="navbar">
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">The OldTrick</span>
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li><a href="./index.html">HOME</a></li>
+          <li>
+            <a href="#">BRANDS</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="./BRANDS-Hondar.html">HONDAR</a></li>
+              <li><a href="./BRANDS-Element.html">ELEMENT</a></li>
+              <li><a href="./BRANDS-BAKER.html">BAKER</a></li>
+              <li><a href="./BRANDS-Santa-Cruz.html">SANTA CRUZ</a></li>
+
+            </ul>
+          </li>
+          <li>
+            <a href="#">CONFECÇÕES</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#"></a></li>
+              <li><a href="./CONFECCOES-moletons.html">MOLETONS</a></li>
+              <li><a href="./CONFECCOES-camisetas.html">CAMISETAS</a></li>
+              <li><a href="./Confeccoes-Tenis.html">TÊNIS</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">SKATE</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="./Skate-Shapes.html">SHAPES</a></li>
+              <li><a href="./Skate-Rodinhas.html">RODINHAS</a></li>
+              <li><a href="./Skate-Rolamento.html">ROLAMENTO</a></li>
+              <li><a href="./Skate-Lixas.html">LIXAS</a></li>
+              <li><a href="./Skate-Kit-Reparo.html">KIT-REPARO</a></li>
+            </ul>
+          </li>
+          <li><a href="./Sobre.html">SOBRE</a></li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Area dos produtos-->
+
+  <div class="aoba">
+    <div class="main_produtos">
+      <div class="Lista" id="Lista">
+        <label>Lista Vazia</label>
+      </div>
+
+
+      <!-- <div class="quantity-container">
+        <span id="moreProduct">+</span>
+        <input type="number" id="fds" min="1" max="10" value="1">
+        <span id="minusProduct">-</span>
+        minusProduct.addEvene (click, funtion ({
+          inputdonumero.value++
+        }))
+      </div>
+      inputdonumero get fds
+      let quantidade = inpuutdonumero.value -->
+      <br>
+
+    </div>
+    <div class="pagamento">
+      <h2> Total da Compra</h2>
+      <label for="">Subtotal</label>
+        <div class="ValorPr" id="ValorPr"></div>
+      <h2>Forma de Pagamento</h2>
+      <div class="Forma-de-pagamento-carrinho">
+        <a href="#">Boleto</a>
+        <p>ou</p>
+        <a href="#">Cartão de Crédito</a>
+        <div class="cartao">
+
+        </div>
+      </div>
+      <div class="Desconto">
+        <h3>Informe seu CEP (desconto de até 20%)</h3>
+      </div>
+      <input type="text">
+      <button>Finalizar Compra</button>
+
+    </div>
+
+  </div>
+
+
+
+
+  <!--Footer-->
+  <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class='bx bxl-slack'></i>
+          <span class="logo_name">The OldStrick</span>
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bx-voicemail'></i></a>
+          <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Companhia</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Rastrear Pedido</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Vendas</li>
+          <li><a href="#">Skates</a></li>
+          <li><a href="#">Tênis</a></li>
+          <li><a href="#">Moletons/Camisetas</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Perfil</li>
+          <li><a href="#">Minha conta</a></li>
+          <li><a href="#">Preferencias</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">NewsLetter</li>
+          <li><input type="text" placeholder="Seu Email"></li>
+          <li><input type="button" value="Inscreva-se"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text"> The OldTrick &#169; 2021</span>
+        <span class="policy_terms">
+          <a href="">Termos de Privacidade</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/produto.js"></script>
+  <script src="./js/carrinho.js"></script>
+  <!-- <script> carregarProdutos()</script> -->
+
+</body>
+
+</html>

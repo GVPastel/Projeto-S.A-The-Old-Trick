@@ -1,0 +1,40 @@
+
+.sto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+.tst-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.tst{
+    width: 80%;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.lts{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    z-index: 100;
+    
+}
+
+
+
+/* responsive
+@media(max-width: 767px){
+	.controls{
+		display: none;
+	}
+} */
